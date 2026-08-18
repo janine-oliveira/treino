@@ -54,7 +54,7 @@ const exercises = [
     // Demonstração da Runna.
     // A página contém vídeo incorporado.
     videoUrl:
-      "https://support.runna.com/en/articles/6344953-single-leg-glute-bridge-exercise-tutorial",
+      "https://www.youtube.com/watch?v=BW5EiaDGrkQ&t=2s",
 
     // Deixamos vazio porque a página da Runna possui o vídeo
     // incorporado internamente. O app abrirá a demonstração externa.
@@ -103,7 +103,7 @@ const exercises = [
       "https://www.youtube.com/watch?v=hjMEwbXhya4",
 
     embedUrl:
-      "https://www.youtube.com/embed/hjMEwbXhya4",
+      "https://www.youtube.com/watch?v=hjMEwbXhya4",
 
     defaultSets: 3,
     defaultReps: 12,
