@@ -1,0 +1,11 @@
+{
+  "name": "Glúteo Forte",
+  "short_name": "Glúteo Forte",
+  "description": "Treino de glúteos em casa com acompanhamento simples.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf7f9",
+  "theme_color": "#d95f8a",
+  "lang": "pt-BR",
+  "icons": []
+}
