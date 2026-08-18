@@ -1,4 +1,4 @@
-# 🍑 Glúteo Forte
+# 🍑 Treino
 
 Aplicativo pessoal de treino em casa, desenvolvido com HTML, CSS e JavaScript puro.
 
