@@ -35,7 +35,7 @@ http://localhost:8000
 
 ## GitHub Pages
 
-1. Crie um repositório no GitHub, por exemplo `gluteo-forte`.
+1. Crie um repositório no GitHub, por exemplo `treino`.
 2. Envie todos os arquivos.
 3. Vá em **Settings → Pages**.
 4. Em Source, selecione **Deploy from a branch**.
@@ -48,7 +48,7 @@ http://localhost:8000
 
 O histórico é salvo localmente no navegador:
 
-`localStorage → gluteoForte.v1`
+`localStorage → treino.v1`
 
 Não há login nem banco de dados externo neste MVP.
 
