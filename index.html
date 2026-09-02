@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Plano pessoal de treino e alimentação para hipertrofia."
+    >
+
+    <title>🍑 Glúteo Forte | Treino e Nutrição</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <div class="brand">
+                <span class="brand-icon">🍑</span>
+
+                <div>
+                    <h1>Glúteo Forte</h1>
+                    <p>Treino • Hipertrofia • Evolução</p>
+                </div>
+            </div>
+
+            <button
+                id="themeButton"
+                class="theme-button"
+                aria-label="Alternar tema"
+            >
+                🌙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         NAVEGAÇÃO
+    ========================== -->
+
+    <nav class="navigation">
+
+        <button
+            class="nav-button active"
+            data-page="dashboard"
+        >
+            🏠
+            <span>Início</span>
+        </button>
+
+        <button
+            class="nav-button"
+            data-page="workouts"
+        >
+            🏋️
+            <span>Treinos</span>
+        </button>
+
+        <button
+            class="nav-button"
+            data-page="nutrition"
+        >
+            🍽️
+            <span>Dieta</span>
+        </button>
+
+        <button
+            class="nav-button"
+            data-page="progress"
+        >
+            📈
+            <span>Progresso</span>
+        </button>
+
+    </nav>
+
+
+    <main class="container">
+
+
+        <!-- =========================
+             DASHBOARD
+        ========================== -->
+
+        <section
+            id="dashboard"
+            class="page active-page"
+        >
+
+            <div class="welcome">
+
+                <p class="eyebrow">
+                    SEU PLANO DE HOJE
+                </p>
+
+                <h2>
+                    Olá! Vamos construir sua evolução. 💪
+                </h2>
+
+                <p>
+                    Seu objetivo é ganhar massa muscular, aumentar a força
+                    e desenvolver os glúteos de forma progressiva.
+                </p>
+
+            </div>
+
+
+            <!-- TREINO ATUAL -->
+
+            <section class="today-workout">
+
+                <div class="section-header">
+
+                    <div>
+                        <p class="eyebrow">
+                            PRÓXIMO TREINO
+                        </p>
+
+                        <h2 id="todayWorkoutTitle">
+                            Carregando treino...
+                        </h2>
+                    </div>
+
+                    <span
+                        id="workoutStatus"
+                        class="status-badge"
+                    >
+                        Pendente
+                    </span>
+
+                </div>
+
+
+                <div class="workout-summary">
+
+                    <div class="summary-item">
+                        <span>🎯</span>
+
+                        <div>
+                            <small>Foco</small>
+
+                            <strong id="todayWorkoutFocus">
+                                --
+                            </strong>
+                        </div>
+                    </div>
+
+
+                    <div class="summary-item">
+                        <span>🏋️</span>
+
+                        <div>
+                            <small>Exercícios</small>
+
+                            <strong id="todayWorkoutExercises">
+                                --
+                            </strong>
+                        </div>
+                    </div>
+
+
+                    <div class="summary-item">
+                        <span>⏱️</span>
+
+                        <div>
+                            <small>Duração estimada</small>
+
+                            <strong>
+                                50–70 min
+                            </strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="startWorkoutButton"
+                    class="primary-button large-button"
+                >
+                    COMEÇAR TREINO
+                </button>
+
+            </section>
+
+
+            <!-- PROGRESSO SEMANAL -->
+
+            <section class="dashboard-grid">
+
+                <article class="stat-card">
+
+                    <span class="stat-icon">
+                        🏋️
+                    </span>
+
+                    <p>
+                        Treinos realizados
+                    </p>
+
+                    <h3 id="completedWorkouts">
+                        0
+                    </h3>
+
+                    <small>
+                        desde o início
+                    </small>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <span class="stat-icon">
+                        🔥
+                    </span>
+
+                    <p>
+                        Sequência atual
+                    </p>
+
+                    <h3 id="currentStreak">
+                        0
+                    </h3>
+
+                    <small>
+                        dias ativos
+                    </small>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <span class="stat-icon">
+                        🍑
+                    </span>
+
+                    <p>
+                        Peso atual
+                    </p>
+
+                    <h3>
+                        53 kg
+                    </h3>
+
+                    <small>
+                        meta: 60 kg
+                    </small>
+
+                </article>
+
+            </section>
+
+
+            <!-- CHECKLIST -->
+
+            <section class="daily-checklist">
+
+                <div class="section-header">
+
+                    <div>
+                        <p class="eyebrow">
+                            HOJE
+                        </p>
+
+                        <h2>
+                            Checklist diário
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="checklist-container">
+
+
+                    <label class="check-item">
+
+                        <input
+                            type="checkbox"
+                            id="wheyCheck"
+                        >
+
+                        <span class="custom-check">
+                            ✓
+                        </span>
+
+                        <span class="check-icon">
+                            🥤
+                        </span>
+
+                        <span class="check-text">
+
+                            <strong>
+                                Whey Protein
+                            </strong>
+
+                            <small>
+                                Registrar consumo do dia
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-item">
+
+                        <input
+                            type="checkbox"
+                            id="creatineCheck"
+                        >
+
+                        <span class="custom-check">
+                            ✓
+                        </span>
+
+                        <span class="check-icon">
+                            ⚡
+                        </span>
+
+                        <span class="check-text">
+
+                            <strong>
+                                Creatina
+                            </strong>
+
+                            <small>
+                                Consumo diário
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-item">
+
+                        <input
+                            type="checkbox"
+                            id="proteinCheck"
+                        >
+
+                        <span class="custom-check">
+                            ✓
+                        </span>
+
+                        <span class="check-icon">
+                            🥩
+                        </span>
+
+                        <span class="check-text">
+
+                            <strong>
+                                Meta de proteína
+                            </strong>
+
+                            <small>
+                                Aproximadamente 100 g/dia
+                            </small>
+
+                        </span>
+
+                    </label>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- RESUMO DO OBJETIVO -->
+
+            <section class="goal-card">
+
+                <div class="goal-icon">
+                    🎯
+                </div>
+
+                <div>
+
+                    <p class="eyebrow">
+                        OBJETIVO ATUAL
+                    </p>
+
+                    <h2>
+                        Ganho de massa muscular
+                    </h2>
+
+                    <p>
+                        Evoluir de 53 kg para aproximadamente 60 kg,
+                        priorizando ganho de massa muscular, força
+                        e desenvolvimento dos glúteos.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+        <!-- =========================
+             TREINOS
+        ========================== -->
+
+        <section
+            id="workouts"
+            class="page"
+        >
+
+            <div class="page-header">
+
+                <p class="eyebrow">
+                    CRONOGRAMA FLEXÍVEL
+                </p>
+
+                <h2>
+                    🏋️ Meus Treinos
+                </h2>
+
+                <p>
+                    Você treina 3 vezes por semana, mas ainda pode escolher
+                    os dias. O sistema organiza os treinos em sequência.
+                </p>
+
+            </div>
+
+
+            <!-- INFORMAÇÃO -->
+
+            <div class="info-box">
+
+                <span>
+                    💡
+                </span>
+
+                <p>
+                    <strong>Como funciona:</strong>
+                    complete os treinos A, B e C ao longo da semana.
+                    Evite fazer dois treinos pesados de pernas em dias
+                    consecutivos quando estiver muito cansada.
+                </p>
+
+            </div>
+
+
+            <!-- TREINO A -->
+
+            <article class="workout-card">
+
+                <div class="workout-card-header">
+
+                    <div>
+
+                        <span class="workout-letter">
+                            A
+                        </span>
+
+                        <h3>
+                            🍑 Glúteos + Posterior
+                        </h3>
+
+                    </div>
+
+                    <span class="workout-type">
+                        Inferiores
+                    </span>
+
+                </div>
+
+
+                <p class="workout-description">
+
+                    Foco principal no glúteo máximo,
+                    posteriores da coxa e movimentos de extensão do quadril.
+
+                </p>
+
+
+                <div class="muscle-tags">
+
+                    <span>
+                        🍑 Glúteo máximo
+                    </span>
+
+                    <span>
+                        🦵 Posteriores
+                    </span>
+
+                    <span>
+                        🧠 Core
+                    </span>
+
+                </div>
+
+
+                <div class="exercise-list">
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Hip Thrust
+                            </strong>
+
+                            <small>
+                                Glúteo máximo
+                            </small>
+
+                        </div>
+
+                        <span>
+                            4 × 8–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Mesa Flexora
+                            </strong>
+
+                            <small>
+                                Posteriores
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 10–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Stiff / Levantamento Romeno
+                            </strong>
+
+                            <small>
+                                Posteriores + Glúteos
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 8–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Abdutora
+                            </strong>
+
+                            <small>
+                                Glúteo médio
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 12–15
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Panturrilha
+                            </strong>
+
+                            <small>
+                                Panturrilhas
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 12–15
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- TREINO B -->
+
+            <article class="workout-card">
+
+                <div class="workout-card-header">
+
+                    <div>
+
+                        <span class="workout-letter">
+                            B
+                        </span>
+
+                        <h3>
+                            🍑 Glúteos + Quadríceps
+                        </h3>
+
+                    </div>
+
+                    <span class="workout-type">
+                        Inferiores
+                    </span>
+
+                </div>
+
+
+                <p class="workout-description">
+
+                    Desenvolvimento dos glúteos com participação
+                    controlada de quadríceps e estabilidade das pernas.
+
+                </p>
+
+
+                <div class="muscle-tags">
+
+                    <span>
+                        🍑 Glúteos
+                    </span>
+
+                    <span>
+                        🦵 Quadríceps
+                    </span>
+
+                    <span>
+                        🧠 Core
+                    </span>
+
+                </div>
+
+
+                <div class="exercise-list">
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Leg Press
+                            </strong>
+
+                            <small>
+                                Quadríceps + Glúteos
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 8–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Agachamento no Smith
+                            </strong>
+
+                            <small>
+                                Glúteos + Quadríceps
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 8–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Cadeira Extensora
+                            </strong>
+
+                            <small>
+                                Quadríceps
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 10–15
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Abdutora
+                            </strong>
+
+                            <small>
+                                Glúteo médio
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 12–20
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Abdominal / Core
+                            </strong>
+
+                            <small>
+                                Estabilidade
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 séries
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- TREINO C -->
+
+            <article class="workout-card upper-workout">
+
+                <div class="workout-card-header">
+
+                    <div>
+
+                        <span class="workout-letter">
+                            C
+                        </span>
+
+                        <h3>
+                            💪 Superiores Completo
+                        </h3>
+
+                    </div>
+
+                    <span class="workout-type">
+                        Superiores
+                    </span>
+
+                </div>
+
+
+                <p class="workout-description">
+
+                    Treino completo para costas, peito, ombros,
+                    bíceps e tríceps.
+
+                </p>
+
+
+                <div class="muscle-tags">
+
+                    <span>
+                        🔙 Costas
+                    </span>
+
+                    <span>
+                        💪 Braços
+                    </span>
+
+                    <span>
+                        🏋️ Ombros
+                    </span>
+
+                    <span>
+                        🫁 Peito
+                    </span>
+
+                </div>
+
+
+                <div class="exercise-list">
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Puxada Frontal
+                            </strong>
+
+                            <small>
+                                Costas
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 8–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Remada Máquina
+                            </strong>
+
+                            <small>
+                                Costas
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 8–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Supino Máquina
+                            </strong>
+
+                            <small>
+                                Peito
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 8–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Desenvolvimento de Ombros
+                            </strong>
+
+                            <small>
+                                Ombros
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 10–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Rosca Bíceps
+                            </strong>
+
+                            <small>
+                                Bíceps
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 10–12
+                        </span>
+
+                    </div>
+
+
+                    <div class="exercise-row">
+
+                        <div>
+
+                            <strong>
+                                Tríceps Polia
+                            </strong>
+
+                            <small>
+                                Tríceps
+                            </small>
+
+                        </div>
+
+                        <span>
+                            3 × 10–12
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- REGRAS -->
+
+            <section class="training-rules">
+
+                <h3>
+                    📌 Regras de Progressão
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Priorize a execução correta antes de aumentar a carga.
+                    </li>
+
+                    <li>
+                        Quando conseguir realizar o máximo da faixa de
+                        repetições com boa técnica, considere aumentar
+                        gradualmente a carga.
+                    </li>
+
+                    <li>
+                        Não aumente carga e repetições drasticamente ao mesmo tempo.
+                    </li>
+
+                    <li>
+                        Dor articular importante ou dor aguda não deve ser ignorada.
+                    </li>
+
+                    <li>
+                        Registre os treinos para acompanhar sua evolução.
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </section>
+
+
+        <!-- =========================
+             NUTRIÇÃO
+        ========================== -->
+
+        <section
+            id="nutrition"
+            class="page"
+        >
+
+            <div class="page-header">
+
+                <p class="eyebrow">
+                    ALIMENTAÇÃO
+                </p>
+
+                <h2>
+                    🍽️ Plano Alimentar
+                </h2>
+
+                <p>
+                    Alimentação voltada para ganho de massa muscular
+                    sem restrições desnecessárias.
+                </p>
+
+            </div>
+
+
+            <!-- META DE PROTEÍNA -->
+
+            <section class="nutrition-goal">
+
+                <div class="nutrition-icon">
+                    🥩
+                </div>
+
+                <div>
+
+                    <p>
+                        Meta inicial de proteína
+                    </p>
+
+                    <h2>
+                        ~100 g por dia
+                    </h2>
+
+                    <small>
+                        Meta prática inicial para acompanhar o ganho
+                        de massa muscular.
+                    </small>
+
+                </div>
+
+            </section>
+
+
+            <!-- CAFÉ DA MANHÃ -->
+
+            <article class="meal-card">
+
+                <div class="meal-title">
+
+                    <span>
+                        ☀️
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Café da manhã
+                        </h3>
+
+                        <p>
+                            Energia + proteína
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        ☕ Café com leite sem açúcar
+                    </li>
+
+                    <li>
+                        🍳 2 ovos
+                    </li>
+
+                    <li>
+                        🥖 Pão francês
+                        <strong>OU</strong>
+                        pão de queijo
+                        <strong>OU</strong>
+                        broa de milho
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- ALMOÇO -->
+
+            <article class="meal-card">
+
+                <div class="meal-title">
+
+                    <span>
+                        🍛
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Almoço
+                        </h3>
+
+                        <p>
+                            Refeição completa
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        🥩 Uma porção de proteína
+                    </li>
+
+                    <li>
+                        🍚 Arroz
+                    </li>
+
+                    <li>
+                        🫘 Feijão
+                    </li>
+
+                    <li>
+                        🥗 Salada e/ou legumes
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- JANTAR -->
+
+            <article class="meal-card">
+
+                <div class="meal-title">
+
+                    <span>
+                        🌙
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Jantar
+                        </h3>
+
+                        <p>
+                            Recuperação muscular
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        🥩 Fonte de proteína
+                    </li>
+
+                    <li>
+                        🍚 Arroz + feijão
+                        <strong>OU</strong>
+                        🍝 macarrão
+                    </li>
+
+                    <li>
+                        🥗 Legumes ou salada
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- PROTEÍNAS -->
+
+            <section class="protein-sources">
+
+                <h3>
+                    💪 Fontes de proteína disponíveis
+                </h3>
+
+                <div class="protein-grid">
+
+                    <span>🥚 Ovos</span>
+
+                    <span>🍗 Frango</span>
+
+                    <span>🥩 Carne de porco</span>
+
+                    <span>🍗 Moela</span>
+
+                    <span>🥛 Leite</span>
+
+                    <span>🥤 Whey</span>
+
+                    <span>🍗 Fígado</span>
+
+                </div>
+
+            </section>
+
+
+            <!-- OBSERVAÇÕES -->
+
+            <section class="nutrition-tips">
+
+                <h3>
+                    💡 Lembretes
+                </h3>
+
+                <div class="tip">
+
+                    <span>
+                        🍝
+                    </span>
+
+                    <p>
+                        <strong>Macarrão não está proibido.</strong>
+                        Ele pode fazer parte da sua alimentação,
+                        principalmente quando combinado com uma boa fonte
+                        de proteína.
+                    </p>
+
+                </div>
+
+
+                <div class="tip">
+
+                    <span>
+                        🥤
+                    </span>
+
+                    <p>
+                        Whey é uma ferramenta para ajudar a atingir
+                        a proteína diária, não uma obrigação em todas
+                        as refeições.
+                    </p>
+
+                </div>
+
+
+                <div class="tip">
+
+                    <span>
+                        ⚡
+                    </span>
+
+                    <p>
+                        A creatina pode ser utilizada diariamente conforme
+                        a quantidade indicada no produto.
+                    </p>
+
+                </div>
+
+
+                <div class="tip">
+
+                    <span>
+                        🍫
+                    </span>
+
+                    <p>
+                        Durante a TPM, comer um doce não representa
+                        fracasso. Volte normalmente para sua alimentação
+                        na próxima refeição.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- =========================
+             PROGRESSO
+        ========================== -->
+
+        <section
+            id="progress"
+            class="page"
+        >
+
+            <div class="page-header">
+
+                <p class="eyebrow">
+                    EVOLUÇÃO
+                </p>
+
+                <h2>
+                    📈 Meu Progresso
+                </h2>
+
+                <p>
+                    Acompanhe sua consistência e evolução nos treinos.
+                </p>
+
+            </div>
+
+
+            <section class="progress-stats">
+
+                <article>
+
+                    <span>
+                        🏋️
+                    </span>
+
+                    <h3 id="progressTotal">
+                        0
+                    </h3>
+
+                    <p>
+                        Treinos concluídos
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        📅
+                    </span>
+
+                    <h3 id="progressThisWeek">
+                        0
+                    </h3>
+
+                    <p>
+                        Nesta semana
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        🔥
+                    </span>
+
+                    <h3 id="progressStreak">
+                        0
+                    </h3>
+
+                    <p>
+                        Sequência
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- HISTÓRICO -->
+
+            <section class="history-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            HISTÓRICO
+                        </p>
+
+                        <h2>
+                            Últimos treinos
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="workoutHistory"
+                    class="history-list"
+                >
+
+                    <p class="empty-history">
+
+                        Nenhum treino registrado ainda.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESET -->
+
+            <section class="danger-zone">
+
+                <h3>
+                    Gerenciamento dos dados
+                </h3>
+
+                <p>
+                    Seus dados ficam salvos apenas neste navegador
+                    usando localStorage.
+                </p>
+
+                <button
+                    id="resetDataButton"
+                    class="secondary-button danger-button"
+                >
+                    Limpar histórico de treinos
+                </button>
+
+            </section>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         MODAL DE TREINO
+    ========================== -->
+
+    <div
+        id="workoutModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeModalButton"
+                class="close-button"
+            >
+                ×
+            </button>
+
+
+            <p class="eyebrow">
+                TREINO DE HOJE
+            </p>
+
+            <h2
+                id="modalWorkoutTitle"
+            >
+                Treino
+            </h2>
+
+
+            <div
+                id="modalWorkoutContent"
+                class="modal-exercises"
+            >
+            </div>
+
+
+            <button
+                id="completeWorkoutButton"
+                class="primary-button large-button"
+            >
+                ✅ CONCLUIR TREINO
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <p>
+            🍑 Glúteo Forte
+        </p>
+
+        <small>
+            Seu plano pessoal de treino e evolução.
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
